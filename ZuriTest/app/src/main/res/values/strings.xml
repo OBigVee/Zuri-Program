@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ZuriTest</string>
+    <string name="app_textView">Increment and Decrement </string>
+</resources>
