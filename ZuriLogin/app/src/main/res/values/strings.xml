@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ZuriLogin</string>
+    <string name="login">Login</string>
+    <string name="access">Access Account</string>
+    <string name="Email">or Login with Email</string>
+    <string name="signIn">Sign in</string>
+</resources>
