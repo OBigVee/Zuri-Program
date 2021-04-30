@@ -53,19 +53,21 @@
 
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/ibtnFB"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@color/white"
-                app:srcCompat="@mipmap/fb" />
+                app:srcCompat="@mipmap/fb"
+                android:contentDescription="facebook signIn"/>
 
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/ibtnGoo"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@color/white"
-                app:srcCompat="@mipmap/goo" />
+                app:srcCompat="@mipmap/goo"
+                android:contentDescription="Google signUp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -76,6 +78,7 @@
             android:padding="5dp">
 
             <TextView
+                android:id="@+id/tvOr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Email"
@@ -90,6 +93,7 @@
             android:padding="20dp">
 
             <TextView
+                android:id="@+id/tvEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="15dp"
@@ -98,6 +102,7 @@
                 android:textColor="@color/black" />
 
             <EditText
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
@@ -117,6 +122,7 @@
             android:padding="20dp">
 
             <TextView
+                android:id="@+id/tvPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Password"
@@ -125,6 +131,7 @@
                 android:textColor="@color/black" />
 
             <EditText
+                android:id="@+id/etPass"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/edit_round"
@@ -137,6 +144,7 @@
                 android:textColorHint="@color/black" />
 
             <CheckBox
+                android:id="@+id/cbRemember"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Remember me"
@@ -151,17 +159,34 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/btnSignIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/signIn" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:textColor="#6E6C6C"
-                android:text="Don't have an account ? "></TextView>
         </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_gravity="center_horizontal"
+               >
+               <TextView
+                   android:id="@+id/tvDontHaveAccount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:clickable="true"
+                   android:textColor="#6E6C6C"
+                   android:text="@string/notAccount"/>
+               <TextView
+                   android:id="@+id/tvSignUp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:contextClickable="true"
+                   android:textColor="@color/black"
+                   android:text="@string/signUp"/>
+           </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
