@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Coding Facts</string>
+
+    <string name="login">Login</string>
+    <string name="access">Access Account</string>
+    <string name="OrEmail">or Login with Email</string>
+    <string name="enterEmail">Email</string>
+    <string name="Password">Password</string>
+    <string name="signIn">Sign in</string>
+    <string name="notAccount">Don\'t have an account <b>?</b></string>
+    <string name="signUp"><u>Sign  Up</u></string>
+</resources>
