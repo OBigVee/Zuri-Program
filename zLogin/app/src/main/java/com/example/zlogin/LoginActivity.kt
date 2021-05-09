@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
         val signUpBtn = findViewById<Button>(R.id.textButton)
 
         signInBtn.setOnClickListener{
-            if (email.toString() == "adedejivictor98@gmail.com" && password.toString() == "12345"){
+            if (email.text.toString() == "adedejivictor98@gmail.com" && password.text.toString() == "12345"){
               val intent =  Intent(this, Homepage::class.java)
                 startActivity(intent)
 
