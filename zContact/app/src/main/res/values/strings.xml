@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Contact</string>
+    <string name="category">Select Contact Category</string>
+    <string name="friends">Friends</string>
+    <string name="work">Work</string>
+    <string name="family">Family</string>
+    <string name="techCommunity">Techies</string>
+    <string name="school">School</string>
+    <string name="unk">Unknown</string>
+    <string name="addContact">Add New Contact</string>
+    <string name="saveContact">Save</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/contactCategory"
+        android:text="@string/category"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:id="@+id/btnFamily"
+        style="@style/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:text="@string/family"
+        android:drawableTop="@drawable/ic_family"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/btnFriends"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCategory" />
+
+    <Button
+        android:id="@+id/btnSchool"
+        style="@style/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:text="@string/school"
+        android:drawableTop="@drawable/ic_school"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/btnWork"
+        app:layout_constraintStart_toEndOf="@id/btnFamily"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCategory" />
+
+    <Button
+        android:id="@+id/btnFriends"
+        style="@style/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/rectangle"
+        android:text="@string/friends"
+        android:drawableTop="@drawable/ic_friends"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFamily" />
+
+    <Button
+        android:id="@+id/btnWork"
+        style="@style/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:text="@string/work"
+        android:drawableTop="@drawable/ic_work"
+        android:padding="20dp"
+        app:layout_constraintStart_toEndOf="@id/btnFriends"
+        app:layout_constraintTop_toBottomOf="@id/btnSchool"
+        app:layout_constraintBottom_toTopOf="@+id/btnUnk"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <Button
+
+        android:id="@+id/btnTechies"
+        style="@style/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:text="@string/techCommunity"
+        android:drawableTop="@drawable/ic_tech"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFriends"/>
+
+    <Button
+        android:id="@+id/btnUnk"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/ic_unk_contact"
+        android:padding="20dp"
+        style="@style/button"
+        android:text="@string/unk"
+        app:layout_constraintTop_toBottomOf="@id/btnWork"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnTechies"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
