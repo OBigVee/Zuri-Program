@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
@@ -14,10 +15,16 @@ class MainActivity2 : AppCompatActivity() {
     private lateinit var binding: ActivityMain2Binding
     private val adapter = ContactAdapter ()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding?.root)
+        val assertExtra = intent.getStringExtra(MainActivity.ARGS)
+        if ( assertExtra != null){
+            title = assertExtra
+
+        }
         setupData(binding)
     }
 
@@ -26,7 +33,7 @@ class MainActivity2 : AppCompatActivity() {
         binding.rvContact.adapter = adapter
         val builder = AlertDialog.Builder(this)
         val inflater = this.layoutInflater
-        val view = layoutInflater.inflate(R.layout.add_contact_dialog,null)
+        val view: View = inflater.inflate(R.layout.add_contact_dialog,null)
         builder.setView(view)
 
         val name = view.findViewById<TextView>(R.id.etName)
